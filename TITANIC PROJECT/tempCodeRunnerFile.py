@@ -1,0 +1,5 @@
+survival_by_class=df.groupby("Pclass")["Survived"].mean()
+survival_by_class.plot(kind="bar", color="green")
+plt.title("Survival Rate by class")
+plt.ylabel("Survival Rate")
+plt.show()
